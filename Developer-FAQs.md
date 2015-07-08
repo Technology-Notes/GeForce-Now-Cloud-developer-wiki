@@ -1,4 +1,3 @@
-##Developer FAQs
 ### Who to contact for support?
 Please email camm@nivdia.com
 ### How long should it take a developer to integrate with the GFN SDK?
