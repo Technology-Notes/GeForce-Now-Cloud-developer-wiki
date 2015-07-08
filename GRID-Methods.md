@@ -1,4 +1,4 @@
-<script>
+<script language="javascript">
 alert(123);
 </script>
 ## GRID Initialization/Shutdown Methods
