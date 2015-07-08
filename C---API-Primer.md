@@ -1,9 +1,9 @@
 ## Introduction
-The C API is the most straightforward integration method, as it uses a traditional C library statically linked to your application. It provides a simple set of global methods to be called from your code, as well as a set of global method stubs that should be implemented by you. 
+The C++ API provides an object oriented API as well as the advantage of a unique namespace, but is otherwise similar to the C API. C++ developers can choose to implement the stub class provided by NVidia or interface with GRID only through the C API methods using the ‘GRIDLinkSDK’ namespace.
 
-For an example implementation, you can refer to the “SampleCApplication” project included in the GRID Link SDK package.
+For an example implementation, you can refer to the “SampleCPPApplication” project included in the GRID Link SDK package.
 
-These steps will guide you with the integration.
+These steps will guide you with your integration.
 
 ## Project Setup
 Copy one the following files from the GRID Link SDK directory to your application’s source code tree. Use the .c file if you wish to use C API methods or use the .cpp file if you wish to use the C++ API:
