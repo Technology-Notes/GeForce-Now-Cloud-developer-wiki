@@ -4,11 +4,15 @@ Please email camm@nivdia.com
 NVIDIA will provide a developer contact that can directly communicate with to support this process.
 
 Typically it will take 1 day of work for basic integration. If account federation is required this will take longer and be dependent on your own environment.
-### As a developer do need to configure resolution and FPS?
+### As a developer do I need to configure resolution and FPS?
 No, Resolution and FPS is selected by onboarding team at NVIDIA
+### Why do I get this message: "Failed to create the message bus"?
+This error message is reported by the simulator, primarily due to the fact that the communication port is already in-use (e.g., by another running instance of the simulator, or by the NVStreaming service running on the machine). 
+
+To resolve this issue, make sure you have stopped all the NVIDIA streaming services running on your machine, also make sure that no other instance of the simulator is running.
 ### What audio is supported by GFN?
 Stereo only
-### What controls are supported?1. 
+### What controls are supported? 
 GFN supports X-Input along with keyboard and mouse.
 ### Do I need to change the in-game buttons display?
 Generally you do not need to change in-game buttons, it should just work using X-input.
