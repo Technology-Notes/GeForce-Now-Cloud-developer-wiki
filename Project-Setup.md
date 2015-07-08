@@ -1,4 +1,4 @@
-Copy the following file from the GRID Link SDK directory to your application’s source code tree:
+Copy the following file from the "GRIDLinkSDK" directory to your application's source code tree:
 
 GRIDLinkSDK\stubs\C stubs\GRIDApplication.c
 
