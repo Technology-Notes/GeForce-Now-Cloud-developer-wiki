@@ -37,4 +37,13 @@ You will need to include "GRIDLinkSDK_CAPI.h" for these definitions.
 An Initialize/Shutdown pair should be added each time a process that needs to communicate with GRID is started.
 For example, if you have a launcher that implements the patching methods and a game executable that implements the log-in methods, both should call Initialize at startup and Shutdown during shutdown.
 
+## Implement GRID Application Methods
+You should now begin implementing the methods stubbed out in the GRIDApplication.c  file that you copied into your project
 
+## Add GRID Link API Calls 
+Lastly, you'll need to place Grid API calls in the appropriate locations in your code. See the GRID Link API Methods section for a detailed explanation of each method. 
+
+You will need to include "GRIDLinkSDK_CAPI.h" from any file that calls into the Grid API.
+
+Note that in order to prevent any name collisions, all GRID Link C API methods are prefixed by “gl”.
+ 
