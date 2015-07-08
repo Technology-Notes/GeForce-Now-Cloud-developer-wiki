@@ -6,10 +6,12 @@ The GFN Link SDK provides a very thin static C/C++ library that is linked to the
 At present, NVIDIA provides two different methods you can use to integrate with GFN
 
 **C**
+
 A traditional C library linked into your application. This option is best for applications written in C or other unmanaged languages.
 
 The C API is the most straightforward integration method, as it uses a traditional C library statically linked to the application. It provides a simple set of global methods to be called from the apps code, as well as a set of global method stubs that should be implemented by the developer.
 
 **C++**
+
 An object oriented API in C++. This may be preferable to the C API for those using C++.
 The C++ API provides an object oriented API as well as the advantage of a unique namespace, but is otherwise similar to the C API. C++ developers can choose to implement the stub class provided by NVIDIA or interface with GFN only through the C API methods using the ‘GRIDLinkSDK’ namespace.
