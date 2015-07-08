@@ -1,5 +1,9 @@
-## Project Setup
+## Introduction
+The C API is the most straightforward integration method, as it uses a traditional C library statically linked to your application. It provides a simple set of global methods to be called from your code, as well as a set of global method stubs that should be implemented by you.
+ 
+For an example implementation, you can refer to the “SampleCApplication” project included in the GRID Link SDK package.
 
+## Project Setup
 Copy the following file from the "GRIDLinkSDK" directory to your application's source code tree:
 
 GRIDLinkSDK\stubs\C stubs\GRIDApplication.c
