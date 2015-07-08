@@ -1,7 +1,9 @@
 ### Who to contact for support?
 Please email camm@nivdia.com
 ### How long should it take a developer to integrate with the GFN SDK?
-Typically it will take 1 day of work. NVIDIA will provide a developer contact that can directly communicate with to support this process.
+NVIDIA will provide a developer contact that can directly communicate with to support this process.
+
+Typically it will take 1 day of work for basic integration. If account federation is required this will take longer and be dependent on your own environment.
 ### As a developer do need to configure resolution and FPS?
 No, Resolution and FPS is selected by onboarding team at NVIDIA
 ### What audio is supported by GFN?
@@ -15,6 +17,8 @@ Yes
 ### Are players in GFN games able to play with other players of the normal PC games?
 Yes
 ### How does Authentication and Federation work?
+NVIDIA supports OAuth 2.0.
+
 See: [Account Federation Flow](https://github.com/camify/GFN-Link/wiki/Account-Federation-Flow)
 ### What version of Windows does GFN run on?
 Windows Server 12 SP 1
