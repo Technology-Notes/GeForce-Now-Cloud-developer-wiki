@@ -1,4 +1,5 @@
 GRID Link methods fall into three categories:
+
 1. Initialization/Shutdown Methods: Static methods called at initialization and shutdown.
 1. GRID Link API Methods: Methods called by you application to query or notify GRID.
 1. GRID Application Methods: Method implemented by you to expose functionality to GRID.
