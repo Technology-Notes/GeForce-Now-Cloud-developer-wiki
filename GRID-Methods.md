@@ -3,8 +3,14 @@ alert(123);
 </script>
 ## GRID Initialization/Shutdown Methods
 
+<style>
+.qwe
+{
+ color:red;
+}
+</style>
 ### InitializeGRIDLinkSDK
-C	`GRIDLinkError glInitializeGRIDLinkSDK()`<br/>
+<div class="qwe">C</div>	`GRIDLinkError glInitializeGRIDLinkSDK()`<br/>
 C++	`GRIDLinkError GRIDLinkSDK::InitializeGRIDLinkSDK()`
 
 #### Description
