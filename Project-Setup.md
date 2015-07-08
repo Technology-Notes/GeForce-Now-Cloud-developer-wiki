@@ -15,7 +15,7 @@ Precompiled libraries are included for Win32 (x86) and x64 architectures, Debug 
 **Note for VS 2010 – 2013 users:**
 You can easily integrate the correct library into your project by adding the appropriate .props file using the PropertyManager. There are two props files located here:
 
-GRIDLinkSDK\props
+**GRIDLinkSDK\props**
 
 GRIDLinkSDK.props should be used if you're using Multithreaded Dll CRT linkage (/MD option).
 
