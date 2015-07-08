@@ -1,3 +1,5 @@
+## Project Setup
+
 Copy the following file from the "GRIDLinkSDK" directory to your application's source code tree:
 
 GRIDLinkSDK\stubs\C stubs\GRIDApplication.c
@@ -22,3 +24,17 @@ GRIDLinkSDK.props should be used if you're using Multithreaded Dll CRT linkage (
 GRIDLinkSDKNT.props should be used if you're using Multithreaded CRT linkage (/MT option).
 
 No further action should be required to correctly compile and link in this case.
+
+
+## GRID Setup and Shutdown
+
+Add a call to `glInitializeGRIDLinkSDK()` to your application’s startup code. 
+
+Add a call to `glShutdownGRIDLinkSDK()` to your application’s shutdown code.
+
+You will need to include "GRIDLinkSDK_CAPI.h" for these definitions.
+
+An Initialize/Shutdown pair should be added each time a process that needs to communicate with GRID is started.
+For example, if you have a launcher that implements the patching methods and a game executable that implements the log-in methods, both should call Initialize at startup and Shutdown during shutdown.
+
+
