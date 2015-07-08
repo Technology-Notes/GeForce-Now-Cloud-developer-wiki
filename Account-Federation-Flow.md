@@ -2,13 +2,12 @@
 # Components
 ## Game Seat
 The Game Seat is a VM that is used to run the game on.
-## GeForce NOW Agent
+### GeForce NOW Agent
 The GFN Agent is a service that is running on the game seat and is responsible for communication between the GFN Link SDK and other GFN external services such as the IDM, managing the game to provide start and stopping of the game along with game saves and general VM configuration. 
-## GeForce NOW IDM Service
+### GeForce NOW IDM Service
 The GFN IDM (Identity Management) Service provides the single sign-on core of the GeForce NOW Platform. Users will be able to create accounts within and across titles that integrate the services. The identity service allows the federation of multiple external services, for associating NVIDIA-created accounts.
-## GeForce NOW Link SDK
+### GeForce NOW Link SDK
 The GFN Link SDK is a C++/C SDK that provides a simple set of methods and events for developers to allow their games to run in the GeForce Now (GFN) environment.
-
 
 # Steps
 
