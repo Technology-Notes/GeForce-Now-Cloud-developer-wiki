@@ -39,7 +39,7 @@ In most cases IGRIDLink methods return a GRIDLinkError result, which can be used
 C&nbsp;&nbsp;&nbsp;&nbsp;	`bool glIsGRIDEnabled()`<br/>
 C++	`bool IGRIDLink::IsGRIDEnabled()`
 
-Description
+_**Description**_<br/>
 Determines if application is running in GRID environment or not.
 Usage
 	Use to enable any GRID specific application logic.
@@ -51,7 +51,7 @@ Return value
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestKeyboardOverlayOpen(GRIDScreenPosition gspPosition)`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestKeyboardOverlayOpen(GRIDScreenPosition gspPosition)`
 
-Description
+_**Description**_<br/>
 Called from application when it is expecting text input from user. Calling this API would trigger a native keyboard overlay to be shown to the GRID user such that he/she can most easily enter text, based on the particular GRID client platform being used.
 There's no special input handling needed from application; input will be injected into application by GRID (as is done in all other times running in GRID). Note GRID is not displaying any text input box or prompt to user, only a keyboard overlay.
 Usage
@@ -77,7 +77,7 @@ Return value
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestKeyboardOverlayClose()`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestKeyboardOverlayClose()`
 
-Description
+_**Description**_<br/>
 Called from application when necessary text input has been processed and user can continue. This would cause a previously requested keyboard overlay on the GRID user's client display to be dismissed 
 Usage
 	RequestKeyboardOverlayOpen should be called before this method. If not, RequestKeyboardOverlayClose will have no effect.
@@ -90,7 +90,7 @@ Return value
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestGRIDAccessToken(const char** ppchToken)`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestGRIDAccessToken(const char** ppchToken)`
 
-Description
+_**Description**_<br/>
 Request to obtain a user specific access token to allow access to the GRID backend service (IDM endpoint). 
 Usage
 The access token provided can be used by the application’s backend servers to validate the user and obtain user data from the GRID backend service. The GRID backend service provides an OAuth2 interface for validating users and retrieving data. See Account Federation section for more information.
@@ -105,7 +105,7 @@ Return value
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glGetStorageLocation(const char** ppchStoragePath)`<br/>
 C++	`GRIDLinkError IGRIDLink::GetStorageLocation(const char** ppchStoragePath)`
 
-Description
+_**Description**_<br/>
 Provides a path to a GRID managed storage location for the current application and user. All files and folders under this location will be persisted in GRID cloud storage. 
 Usage
 Application developers should use the provided location for storing user-specific application state files and options files. NotifyStorageChange() should be called once all files have been in order to trigger an immediate backup of these files.
@@ -120,7 +120,7 @@ Return value
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glNotifyStorageChange()`<br/>
 C++	`GRIDLinkError IGRIDLink::NotifyStorageChange()`
 
-Description
+_**Description**_<br/>
 Notifies GRID that file saves have completed and that it should immediately backup the local files to cloud storage. Note that all files are automatically saved at the end of a GRID gaming session, so this is only necessary in order to increase robustness.
 Usage
 Called from application when a set of file operations, as defined by the application, are completed at the GRID Storage location. GRID systems may use this notification to provide additional Cloud backup functionality. Application does not need to call this on every single file change.
