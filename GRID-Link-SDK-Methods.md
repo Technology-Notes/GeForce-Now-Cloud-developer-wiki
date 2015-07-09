@@ -1,5 +1,5 @@
 ## GRID Initialization/Shutdown Methods
-### InitializeGRIDLinkSDK
+### &#10146; InitializeGRIDLinkSDK
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glInitializeGRIDLinkSDK()`<br/>
 C++	`GRIDLinkError GRIDLinkSDK::InitializeGRIDLinkSDK()`
 
@@ -14,7 +14,7 @@ _**Return Value**_
 * `GRIDLinkError::gleGRIDComNotEstablished` if running outside a GRID environment (no GRID host or test application running)<br/>
 * `GRIDLinkError::gleIncompatibleVersion` Linked GRID Link SDK library is not compatible with the existing GRID.dll) 
 
-### ShutdownGRIDLinkSDK
+### &#10146; ShutdownGRIDLinkSDK
 C&nbsp;&nbsp;&nbsp;&nbsp;	`void glShutdownGRIDLinkSDK()`<br/>
 C++	`void GRIDLinkSDK::ShutdownGRIDLinkSDK()`
 
@@ -22,7 +22,7 @@ _**Description**_<br/>Should be called at Application shutdown. Frees up memory 
 
 _**Usage**_<br/>Call during application shutdown or when GRID Link API methods are no longer needed.
 
-## GRID Link API Methods (IGRIDLink Interface)
+## GRID-Link Methods (IGRIDLink Interface)
 GRID Link API methods are used to make request from or to notify the GRID backend.
 When your application is operating outside of the GRID environment, these methods are simple stubs that incur almost no cost, so it's safe to add these to your main build.
 The calling convention differs by which API you've chosen to use. Examples of usage and the required include/using statement are given below:
@@ -35,7 +35,7 @@ C++	`#include "GRIDLinkSDK_CAPI.hpp"`<br/>
 
 In most cases `IGRIDLink` methods return a `GRIDLinkError` result, which can be used by the application to check for errors – however, in practice it is unlikely to be useful for the application to check this value as an ideal implementation would not make logic changes based on the result. For example, should `RequestKeyboardOverlayOpen` fail due to running outside of a GRID environment, the application would still continue to accept keyboard input from the native input handler and/or text control. Additionally, since calling `RequestKeyboardOverlayClose` is safe to do even if `RequestKeyboardOverlayOpen` failed, the application can call it when input is no longer needed in all cases.
 
-### IsGRIDEnabled
+### &#10146; IsGRIDEnabled
 C&nbsp;&nbsp;&nbsp;&nbsp;	`bool glIsGRIDEnabled()`<br/>
 C++	`bool IGRIDLink::IsGRIDEnabled()`
 
@@ -49,7 +49,7 @@ _**Return Value**_<br/>
 * `true` Application is running on a game seat virtual machine or GRID test environment
 * `false` Application is not running in a GRID Environment
 
-### RequestKeyboardOverlayOpen
+### &#10146; RequestKeyboardOverlayOpen
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestKeyboardOverlayOpen(GRIDScreenPosition gspPosition)`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestKeyboardOverlayOpen(GRIDScreenPosition gspPosition)`
 
@@ -68,7 +68,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 	
-### RequestKeyboardOverlayClose
+### &#10146; RequestKeyboardOverlayClose
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestKeyboardOverlayClose()`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestKeyboardOverlayClose()`
 
@@ -83,7 +83,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
-### RequestGRIDAccessToken
+### &#10146; RequestGRIDAccessToken
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestGRIDAccessToken(const char** ppchToken)`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestGRIDAccessToken(const char** ppchToken)`
 
@@ -101,7 +101,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
-### GetStorageLocation
+### &#10146; GetStorageLocation
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glGetStorageLocation(const char** ppchStoragePath)`<br/>
 C++	`GRIDLinkError IGRIDLink::GetStorageLocation(const char** ppchStoragePath)`
 
@@ -118,7 +118,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
-### NotifyStorageChange
+### &#10146; NotifyStorageChange
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glNotifyStorageChange()`<br/>
 C++	`GRIDLinkError IGRIDLink::NotifyStorageChange()`
 
@@ -133,5 +133,118 @@ _**Return Value**_<br/>
 * Otherwise, appropriate error code
 
 
-## GRID Application Methods (IGRIDApplication Interface)
+## GRID-Application Methods (IGRIDApplication Interface)
+In order for GRID to make requests of your application, you will need to implement a set of methods stubbed off in the GRIDApplication files provided by NVIDIA. You only need to implement those method that are applicable for your application and your business model, and should leave the default implementation for the remainder. The default implementation for these methods return ‘arNotImplemented’, which indicates to Grid that you’ve not implement that method.
+Implementation in most cases will involve calling into your code in order to perform the requested operation and returning ‘arSuccess’ or ‘aFailure’ instead of the default ‘arNotImplemented’. In cases where the requested operation is asynchronous but no response is required, your application should not block until the operation is complete, but rather return success if the operation was successfully initiated and failure otherwise.
+
+### &#10146; RequestApplicationPause
+C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationPause()`<br/>
+C++	`ApplicationResult IGRIDApplication::RequestApplicationPause()`
+
+_**Description**_<br/>
+Should pause the application when called, if possible.
+For Multiplayer games, it is recommended that this is implemented similar to a client disconnect.
+
+_**Usage**_<br/>
+GRID will call this method in cases where the user loses network connection with the game seat virtual machine or otherwise disconnects from his/her GRID session.
+
+_**Return Value**_<br/>
+* `arNotImplemented` Method not implemented for this application
+* `arSuccess` Command accepted successfully
+* `arFailure` Command not possible at this time
+
+
+### &#10146; RequestApplicationSave
+C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationSave()`<br/>
+C++	`ApplicationResult IGRIDApplication::RequestApplicationSave()`
+
+_**Description**_<br/>
+Should save all user game and option data. 
+It is recommended this be implemented as an autosave if such a feature is supported by your application.
+
+_**Usage**_<br/>
+GRID will call this method in order to save user progress in cases where the user has gone idle or otherwise disconnected from the game seat virtual machine.
+
+_**Return Value**_<br/>
+* `arNotImplemented` Method not implemented for this application
+* `arSuccess` Command accepted successfully
+* `arFailure` Command not possible at this time
+
+### &#10146; RequestApplicationExit
+C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationExit()`<br/>
+C++	`ApplicationResult IGRIDApplication::RequestApplicationExit()`
+
+_**Description**_<br/>
+Should perform a graceful exit of the application when called. 
+
+_**Usage**_<br/>
+GRID will call this method in cases where a GRID gaming session has completed prior to the user closing the application themselves; For example, after a prolonged network connection loss.
+
+_**Return Value**_<br/>
+* `arNotImplemented` Method not implemented for this application
+* `arSuccess` Command accepted successfully
+* `arFailure` Command not possible at this time
+
+### &#10146; LockUserOptions
+C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glLockUserOptions(UserOptions uoOptions)`<br/>
+C++	`ApplicationResult IGRIDApplication::LockUserOptions(UserOptions uoOptions)`
+
+_**Description**_<br/>
+Should disable certain user option menus in the application, such as graphics options, screen resolution changes and windowed/fullscreen mode. 
+
+_**Usage**_<br/>
+GRID will call this method shortly after being initialized in order to inform the application which user options should be disabled. Alternatively, application developers can use calls to IsGRIDEnabled at the appropriate locations in order to disable these options themselves.
+
+_**Parameters**_<br/>
+`uoOptions`	Set of flags representing the types of options to disable<br/>
+At present only a single option flag has been specified:
+`uoGraphicsSettings` Disable all optional graphics settings, including screen resolution, windowed mode and graphics quality options.
+
+_**Return Value**_<br/>
+* `arNotImplemented` Method not implemented for this application
+* `arSuccess` Command accepted successfully
+* `arFailure` Command not possible at this time 
+
+### &#10146; SetLocale
+C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glSetLocale(const char* pchlanguageCode)`<br/>
+C++	`ApplicationResult IGRIDApplication::SetLocale(const char* pchlanguageCode)`
+
+_**Description**_<br/>
+Should set application’s localization settings to those provided by GRID.
+Since GRID does not perform language specific installs for every language an application supports or have separate game seat virtual machine for each language, it is necessary to set the application locale to the user’s locale dynamically.
+In order to properly implement this feature applications must be able to switch locales at runtime without restarting the application.
+
+_**Usage**_<br/>
+GRID will call this method shortly after being initialized in order to set the application’s locale to that requested by the user. If the requested locale is not supported, the application should return arFailure and use “en-US” as a default.
+
+_**Parameters**_<br/>
+`pchLanguageCode`	Code following ISO 639-1 and ISO 3166-1 standards (i.e. 'en-US')
+
+_**Return Value**_<br/>
+* `arNotImplemented` Method not implemented for this application
+* `arSuccess` Command accepted successfully
+* `arFailure` Command not possible at this time
+
+
+### &#10146; IsUpdateRequired
+C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glIsUpdateRequired(bool* pbUpdate)`<br/>
+C++	`ApplicationResult IGRIDApplication::IsUpdateRequired(bool* pbUpdate)`
+
+_**Description**_<br/>
+Determines if the application requires an update or patch in order to continue execution.
+In most cases GRID will keep applications updated to the most recent version, but in cases where an application developer releases an update without proving this to NVIDIA, it’s possible that the application is temporarily out of date. Applications should not self patch in the GRID environment.
+Note that this is querying if it is possible to run with the current executable, not whether the application is fully up to date. For example, if a game’s backend is backward compatible with slightly out of date clients, then this should return true rather than false.
+
+_**Usage**_<br/>
+GRID will call this method shortly after being initialized in order to determine if the application is able to run with the current version.
+
+_**Parameters**_<br/>
+`pbUpdate`	Should be set to true by the application if the current version of the application is not able to run, false otherwise.
+
+_**Return Value**_<br/>
+* `arNotImplemented` Method not implemented for this application
+* `arSuccess` Command accepted successfully
+* `arFailure` Command not possible at this time
+
+
 
