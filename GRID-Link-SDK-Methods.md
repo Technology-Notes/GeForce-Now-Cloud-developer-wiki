@@ -134,8 +134,8 @@ _**Return Value**_<br/>
 
 
 ## GRID-Application Methods (IGRIDApplication Interface)
-In order for GRID to make requests of your application, you will need to implement a set of methods stubbed off in the GRIDApplication files provided by NVIDIA. You only need to implement those method that are applicable for your application and your business model, and should leave the default implementation for the remainder. The default implementation for these methods return ‘arNotImplemented’, which indicates to Grid that you’ve not implement that method.
-Implementation in most cases will involve calling into your code in order to perform the requested operation and returning ‘arSuccess’ or ‘aFailure’ instead of the default ‘arNotImplemented’. In cases where the requested operation is asynchronous but no response is required, your application should not block until the operation is complete, but rather return success if the operation was successfully initiated and failure otherwise.
+In order for GRID to make requests of your application, you will need to implement a set of methods stubbed off in the GRIDApplication files provided by NVIDIA. You only need to implement those method that are applicable for your application and your business model, and should leave the default implementation for the remainder. The default implementation for these methods return `arNotImplemented`, which indicates to Grid that you’ve not implement that method.
+Implementation in most cases will involve calling into your code in order to perform the requested operation and returning `arSuccess` or `arFailure` instead of the default `arNotImplemented`. In cases where the requested operation is asynchronous but no response is required, your application should not block until the operation is complete, but rather return success if the operation was successfully initiated and failure otherwise.
 
 ### &#10146; RequestApplicationPause
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationPause()`<br/>
@@ -215,7 +215,7 @@ Since GRID does not perform language specific installs for every language an app
 In order to properly implement this feature applications must be able to switch locales at runtime without restarting the application.
 
 _**Usage**_<br/>
-GRID will call this method shortly after being initialized in order to set the application’s locale to that requested by the user. If the requested locale is not supported, the application should return arFailure and use “en-US” as a default.
+GRID will call this method shortly after being initialized in order to set the application’s locale to that requested by the user. If the requested locale is not supported, the application should return `arFailure` and use “en-US” as a default.
 
 _**Parameters**_<br/>
 `pchLanguageCode`	Code following ISO 639-1 and ISO 3166-1 standards (i.e. 'en-US')
