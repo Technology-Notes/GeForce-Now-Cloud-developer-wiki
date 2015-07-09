@@ -7,6 +7,9 @@ For reference, you can use the `SampleCPPGUIApplication` to test out the tool. Y
 
 The tool can be used to test sending the various `IGRIDApplication` commands to your application and also displays and emulates responses to `IGRIDLink` calls from your application.
 
+![GFN Simulator](https://github.com/camify/GFN-Link/blob/master/docs/GFNSimulator.png)
+![Sample GRID App](https://github.com/camify/GFN-Link/blob/master/docs/sampleGRIDapp.png)
+
 ## GRID Environment
 The “GRID Environment” is used to refer to the case where your application is running on a game seat virtual machine (see Architecture section). This can be emulated using the GRID Test Tool described above.
 Application developers should be sure to test their application both in and out of the GRID Environment.
@@ -15,3 +18,4 @@ From a technical standpoint, two things must happen in order for the application
 2. 	The GRID Service or an emulator such at the GUI Test Tool must be running.
 
 It is recommended that application developers NOT package the `GRID.dll` with their application, as otherwise there is a minor startup cost to loading this dll and attempting to connect to the GRID Service. NVIDIA will package the dll with your application as part of the GRID onboarding process.
+
