@@ -1,9 +1,3 @@
-### Who to contact for support?
-Please email gfnlink@nivdia.com
-### How long should it take a developer to integrate with the GFN SDK?
-NVIDIA will provide a developer contact that can directly communicate with to support this process.
-
-Typically it will take 1 day of work for basic integration. If account federation is required this will take longer and be dependent on your own environment.
 ### As a developer do I need to configure resolution and FPS?
 No, Resolution and FPS is selected by onboarding team at NVIDIA
 ### Why do I get this message: "Failed to create the message bus"?
