@@ -193,7 +193,7 @@ _**Description**_<br/>
 Should disable certain user option menus in the application, such as graphics options, screen resolution changes and windowed/fullscreen mode. 
 
 _**Usage**_<br/>
-GRID will call this method shortly after being initialized in order to inform the application which user options should be disabled. Alternatively, application developers can use calls to IsGRIDEnabled at the appropriate locations in order to disable these options themselves.
+GRID will call this method shortly after being initialized in order to inform the application which user options should be disabled. Alternatively, application developers can use calls to `IsGRIDEnabled` at the appropriate locations in order to disable these options themselves.
 
 _**Parameters**_<br/>
 `uoOptions`	Set of flags representing the types of options to disable<br/>
@@ -245,6 +245,3 @@ _**Return Value**_<br/>
 * `arNotImplemented` Method not implemented for this application
 * `arSuccess` Command accepted successfully
 * `arFailure` Command not possible at this time
-
-
-
