@@ -6,7 +6,7 @@ Allows Us to Work with Game Developers to solve some cloud gaming challenges
 Better User Experience when playing cloud streaming games
 Speeds up the implementation process
 ### Who to contact for support?
-Please email gfnlink@nivdia.com
+Please email gfnlink@nvidia.com
 ### How long should it take a developer to integrate with the GFN SDK?
 NVIDIA will provide a developer contact that can directly communicate with to support this process.
 
