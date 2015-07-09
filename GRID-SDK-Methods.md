@@ -61,7 +61,7 @@ _**Usage**_<br/>
 	This API should be called as a pair with `RequestKeyboardOverlayClose`. Multiple calls to `RequestKeyboardOverlayOpen` will have no effect after the first call.
 	
 _**Parameters**_<br/>
-`gspPosition`	the desired screen positioning of text input element (i.e. Android keyboard). Should be one of the following values: `{gspBottom, gspTop, gspLeft, gspRight, gspCenter, gspTopLeft, gspTopRight, gspBottomLeft, gspBottomRight}`
+`gspPosition`	the desired screen positioning of text input element (i.e. Android keyboard). Should be one of the following values: `gspBottom, gspTop, gspLeft, gspRight, gspCenter, gspTopLeft, gspTopRight, gspBottomLeft, gspBottomRight`
 
 
 _**Return Value**_<br/>
@@ -98,7 +98,7 @@ _**Parameters**_<br/>
 
 
 _**Return Value**_<br/>
-* gleSuccess: On success
+* `gleSuccess` On success
 * Otherwise, appropriate error code
 
 ### GetStorageLocation
@@ -115,7 +115,7 @@ _**Parameters**_<br/>
 `ppchStoragePath`	Populated with a local directory path for the application to store files to.
 
 _**Return Value**_<br/>
-* gleSuccess: On success
+* `gleSuccess` On success
 * Otherwise, appropriate error code
 
 ### NotifyStorageChange
@@ -129,7 +129,7 @@ _**Usage**_<br/>
 Called from application when a set of file operations, as defined by the application, are completed at the GRID Storage location. GRID systems may use this notification to provide additional Cloud backup functionality. Application does not need to call this on every single file change.
 
 _**Return Value**_<br/>
-* gleSuccess: On success
+* `gleSuccess` On success
 * Otherwise, appropriate error code
 
 
