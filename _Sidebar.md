@@ -27,9 +27,9 @@
 		</li>
 		<li>[GRID Application Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#gridapp)
 			<ul>
-				<li>[`RequestApplicationPause`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_pause)</li>
-				<li>[`RequestApplicationSave`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_save)</li>
-				<li>[`RequestApplicationExit`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_exit)</li>
+				<li>[`RequestApplica...Pause`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_pause)</li>
+				<li>[`RequestApplica...Save`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_save)</li>
+				<li>[`RequestApplica...Exit`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_exit)</li>
 				<li>[`LockUserOptions`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_lock)</li>
 				<li>[`SetLocale`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_locale)</li>
 				<li>[`IsUpdateRequired`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_update)</li>
