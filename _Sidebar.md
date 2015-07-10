@@ -2,8 +2,8 @@
 * FAQ
 	<dl>
 	   <ul>
-		  <li>Developer's FAQ</li>
-		  <li>Manager's FAQ</li>
+		  <li> [Developer's FAQ](/wiki/Developer-FAQs)</li>
+		  <li>[Manager's FAQ](/wiki/General-FAQs)</li>
 	   </ul>
 	</dl>
 * SDK Reference
