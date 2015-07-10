@@ -6,7 +6,13 @@
 		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQs)</li>
 	   </ul>
 	</dl>
-* SDK Reference
+* Project Setup
+	<dl>
+	   <ul>
+		  <li>C</li>
+		  <li>C++</li>
+	   </ul>
+	</dl>
 * SDK Reference
 <dl>
 	<ul>
