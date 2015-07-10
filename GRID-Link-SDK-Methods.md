@@ -1,5 +1,6 @@
 <dl><a name="gridinit"></dl>
 ## GRID Initialization/Shutdown Methods
+<dl><a name="m_init"></dl>
 ### &#10146; InitializeGRIDLinkSDK
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glInitializeGRIDLinkSDK()`<br/>
 C++	`GRIDLinkError GRIDLinkSDK::InitializeGRIDLinkSDK()`
@@ -15,6 +16,7 @@ _**Return Value**_
 * `GRIDLinkError::gleGRIDComNotEstablished` if running outside a GRID environment (no GRID host or test application running)<br/>
 * `GRIDLinkError::gleIncompatibleVersion` Linked GRID Link SDK library is not compatible with the existing GRID.dll) 
 
+<dl><a name="m_shut"></dl>
 ### &#10146; ShutdownGRIDLinkSDK
 C&nbsp;&nbsp;&nbsp;&nbsp;	`void glShutdownGRIDLinkSDK()`<br/>
 C++	`void GRIDLinkSDK::ShutdownGRIDLinkSDK()`
@@ -37,6 +39,7 @@ C++	`#include "GRIDLinkSDK_CAPI.hpp"`<br/>
 
 In most cases `IGRIDLink` methods return a `GRIDLinkError` result, which can be used by the application to check for errors – however, in practice it is unlikely to be useful for the application to check this value as an ideal implementation would not make logic changes based on the result. For example, should `RequestKeyboardOverlayOpen` fail due to running outside of a GRID environment, the application would still continue to accept keyboard input from the native input handler and/or text control. Additionally, since calling `RequestKeyboardOverlayClose` is safe to do even if `RequestKeyboardOverlayOpen` failed, the application can call it when input is no longer needed in all cases.
 
+<dl><a name="m_enbl"></dl>
 ### &#10146; IsGRIDEnabled
 C&nbsp;&nbsp;&nbsp;&nbsp;	`bool glIsGRIDEnabled()`<br/>
 C++	`bool IGRIDLink::IsGRIDEnabled()`
@@ -51,6 +54,7 @@ _**Return Value**_<br/>
 * `true` Application is running on a game seat virtual machine or GRID test environment
 * `false` Application is not running in a GRID Environment
 
+<dl><a name="m_kbopen"></dl>
 ### &#10146; RequestKeyboardOverlayOpen
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestKeyboardOverlayOpen(GRIDScreenPosition gspPosition)`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestKeyboardOverlayOpen(GRIDScreenPosition gspPosition)`
@@ -70,6 +74,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 	
+<dl><a name="m_kbclose"></dl>
 ### &#10146; RequestKeyboardOverlayClose
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestKeyboardOverlayClose()`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestKeyboardOverlayClose()`
@@ -85,6 +90,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
+<dl><a name="m_token"></dl>
 ### &#10146; RequestGRIDAccessToken
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glRequestGRIDAccessToken(const char** ppchToken)`<br/>
 C++	`GRIDLinkError IGRIDLink::RequestGRIDAccessToken(const char** ppchToken)`
@@ -103,6 +109,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
+<dl><a name="m_stor"></dl>
 ### &#10146; GetStorageLocation
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glGetStorageLocation(const char** ppchStoragePath)`<br/>
 C++	`GRIDLinkError IGRIDLink::GetStorageLocation(const char** ppchStoragePath)`
@@ -120,6 +127,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
+<dl><a name="m_notif"></dl>
 ### &#10146; NotifyStorageChange
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glNotifyStorageChange()`<br/>
 C++	`GRIDLinkError IGRIDLink::NotifyStorageChange()`
@@ -139,6 +147,7 @@ _**Return Value**_<br/>
 In order for GRID to make requests of your application, you will need to implement a set of methods stubbed off in the GRIDApplication files provided by NVIDIA. You only need to implement those method that are applicable for your application and your business model, and should leave the default implementation for the remainder. The default implementation for these methods return `arNotImplemented`, which indicates to Grid that you’ve not implement that method.
 Implementation in most cases will involve calling into your code in order to perform the requested operation and returning `arSuccess` or `arFailure` instead of the default `arNotImplemented`. In cases where the requested operation is asynchronous but no response is required, your application should not block until the operation is complete, but rather return success if the operation was successfully initiated and failure otherwise.
 
+<dl><a name="m_pause"></dl>
 ### &#10146; RequestApplicationPause
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationPause()`<br/>
 C++	`ApplicationResult IGRIDApplication::RequestApplicationPause()`
@@ -156,6 +165,7 @@ _**Return Value**_<br/>
 * `arFailure` Command not possible at this time
 
 
+<dl><a name="m_save"></dl>
 ### &#10146; RequestApplicationSave
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationSave()`<br/>
 C++	`ApplicationResult IGRIDApplication::RequestApplicationSave()`
@@ -172,6 +182,7 @@ _**Return Value**_<br/>
 * `arSuccess` Command accepted successfully
 * `arFailure` Command not possible at this time
 
+<dl><a name="m_exit"></dl>
 ### &#10146; RequestApplicationExit
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glRequestApplicationExit()`<br/>
 C++	`ApplicationResult IGRIDApplication::RequestApplicationExit()`
@@ -187,6 +198,7 @@ _**Return Value**_<br/>
 * `arSuccess` Command accepted successfully
 * `arFailure` Command not possible at this time
 
+<dl><a name="m_lock"></dl>
 ### &#10146; LockUserOptions
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glLockUserOptions(UserOptions uoOptions)`<br/>
 C++	`ApplicationResult IGRIDApplication::LockUserOptions(UserOptions uoOptions)`
@@ -207,6 +219,7 @@ _**Return Value**_<br/>
 * `arSuccess` Command accepted successfully
 * `arFailure` Command not possible at this time 
 
+<dl><a name="m_locale"></dl>
 ### &#10146; SetLocale
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glSetLocale(const char* pchlanguageCode)`<br/>
 C++	`ApplicationResult IGRIDApplication::SetLocale(const char* pchlanguageCode)`
@@ -228,6 +241,7 @@ _**Return Value**_<br/>
 * `arFailure` Command not possible at this time
 
 
+<dl><a name="m_update"></dl>
 ### &#10146; IsUpdateRequired
 C&nbsp;&nbsp;&nbsp;&nbsp;	`ApplicationResult glIsUpdateRequired(bool* pbUpdate)`<br/>
 C++	`ApplicationResult IGRIDApplication::IsUpdateRequired(bool* pbUpdate)`
