@@ -1,9 +1,0 @@
-* wert
-** woeiur
-** woeiurrere
-* terter
-** woeiurrer34
-** werfgdfg
-* ert34
-*  tert
-* terter
