@@ -6,7 +6,8 @@
 		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQs)</li>
 	   </ul>
 	</dl>
-* [SDK Reference](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods)
+* SDK Reference
+* SDK Reference
 <dl>
 	<ul>
 		<li>[Overview](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Overview)</li>
