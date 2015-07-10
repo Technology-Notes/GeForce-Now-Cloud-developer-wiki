@@ -18,9 +18,9 @@
 		<li>[GRID Link API Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#linkapi)
 			<ul>
 				<li>[`IsGRIDEnabled`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_enbl)</li>
-				<li>[`RequestKeyboardOverlayOpen`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_kbopen)</li>
-				<li>[`RequestKeyboardOverlayClose`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_kbclose)</li>
-				<li>[`RequestGRIDAccessToken`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_token)</li>
+				<li>[`RequestKey...OverlayOpen`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_kbopen)</li>
+				<li>[`RequestKey...OverlayClose`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_kbclose)</li>
+				<li>[`Request...AccessToken`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_token)</li>
 				<li>[`GetStorageLocation`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_stor)</li>
 				<li>[`NotifyStorageChange`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_notif)</li>
 			</ul>
