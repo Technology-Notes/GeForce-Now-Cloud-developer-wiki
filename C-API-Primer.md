@@ -6,15 +6,15 @@ For an example implementation, you can refer to the “SampleCApplication” pro
 ## Project Setup
 Copy the following file from the "GRIDLinkSDK" directory to your application's source code tree:
 
-GRIDLinkSDK\stubs\C stubs\GRIDApplication.c
+`GRIDLinkSDK\stubs\C stubs\GRIDApplication.c`
 
 Add the following include path to your compiler commands:
 
-GRIDLinkSDK\include
+`GRIDLinkSDK\include`
 
 Link to the appropriate .lib file in the following location:
 
-GRIDLinkSDK\lib\...
+`GRIDLinkSDK\lib\...`
 
 Precompiled libraries are included for Win32 (x86) and x64 architectures, Debug and Release configurations and MS v100, v110 and v120 platform toolsets.
 
