@@ -2,8 +2,8 @@
 * FAQ
 	<dl>
 	   <ul>
-		  <li> [Developer's FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQs)</li>
-		  <li>[Manager's FAQ](/NVIDIA/GFN-Link/wiki/General-FAQs)</li>
+		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQs)</li>
+		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQs)</li>
 	   </ul>
 	</dl>
 * SDK Reference
