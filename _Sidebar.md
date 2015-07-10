@@ -11,7 +11,7 @@
 	<ul>
 		<li>[Initialization/Shutdown Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#gridinit)
 			<ul>
-				<li>[`InitializeGRIDLinkSDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_init)</li>
+				<li>[`InitializeGRID...SDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_init)</li>
 				<li>[`ShutdownGRIDLinkSDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_shut)</li>
 			</ul>
 		</li>
