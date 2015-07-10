@@ -10,17 +10,21 @@
 	<dl>
 	   <ul>
 		  <li>Steps for C Developers
-			<dl>
-				<ul>
-					<li>1. Project Setup</li>
-					<li>2. GRID Setup and Shutdown</li>
-					<li>3. Implement GRID Application Methods</li>
-					<li>4. Add GRID Link API Calls </li>
-						
-				</ul>
-			</dl>
+			<ul>
+				<li>Project Setup</li>
+				<li>GRID Setup and Shutdown</li>
+				<li>Implement GRID Application Methods</li>
+				<li>Add GRID Link API Calls </li>
+			</ul>
 		  </li>
-		  <li>Steps for C++ Developers</li>
+		  <li>Steps for C++ Developers
+			<ul>
+				<li>Project Setup</li>
+				<li>GRID Setup and Shutdown</li>
+				<li>Implement GRID Application Methods</li>
+				<li>Add GRID Link API Calls </li>
+			</ul>
+		  </li>
 	   </ul>
 	</dl>
 * SDK Reference
