@@ -6,11 +6,21 @@
 		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQs)</li>
 	   </ul>
 	</dl>
-* Project Setup
+* Using GRID-Link SDK
 	<dl>
 	   <ul>
-		  <li>C</li>
-		  <li>C++</li>
+		  <li>Steps for C Developers
+			<dl>
+				<ul>
+					<li>1. Project Setup</li>
+					<li>2. GRID Setup and Shutdown</li>
+					<li>3. Implement GRID Application Methods</li>
+					<li>4. Add GRID Link API Calls </li>
+						
+				</ul>
+			</dl>
+		  </li>
+		  <li>Steps for C++ Developers</li>
 	   </ul>
 	</dl>
 * SDK Reference
