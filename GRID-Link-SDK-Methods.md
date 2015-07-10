@@ -1,3 +1,4 @@
+<dl><a name="gridinit"></dl>
 ## GRID Initialization/Shutdown Methods
 ### &#10146; InitializeGRIDLinkSDK
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GRIDLinkError glInitializeGRIDLinkSDK()`<br/>
@@ -22,6 +23,7 @@ _**Description**_<br/>Should be called at Application shutdown. Frees up memory 
 
 _**Usage**_<br/>Call during application shutdown or when GRID Link API methods are no longer needed.
 
+<dl><a name="linkapi"></dl>
 ## GRID-Link Methods (IGRIDLink Interface)
 GRID Link API methods are used to make request from or to notify the GRID backend.
 When your application is operating outside of the GRID environment, these methods are simple stubs that incur almost no cost, so it's safe to add these to your main build.
@@ -132,7 +134,7 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
-
+<dl><a name="gridapp"></dl>
 ## GRID-Application Methods (IGRIDApplication Interface)
 In order for GRID to make requests of your application, you will need to implement a set of methods stubbed off in the GRIDApplication files provided by NVIDIA. You only need to implement those method that are applicable for your application and your business model, and should leave the default implementation for the remainder. The default implementation for these methods return `arNotImplemented`, which indicates to Grid that you’ve not implement that method.
 Implementation in most cases will involve calling into your code in order to perform the requested operation and returning `arSuccess` or `arFailure` instead of the default `arNotImplemented`. In cases where the requested operation is asynchronous but no response is required, your application should not block until the operation is complete, but rather return success if the operation was successfully initiated and failure otherwise.
