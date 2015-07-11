@@ -2,8 +2,8 @@
 * FAQ
 	<dl>
 	   <ul>
-		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQs)</li>
-		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQs)</li>
+		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQ)</li>
+		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQ)</li>
 	   </ul>
 	</dl>
 * Using GRID-Link SDK
