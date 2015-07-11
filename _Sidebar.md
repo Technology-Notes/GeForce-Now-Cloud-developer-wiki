@@ -27,6 +27,13 @@
 		  </li>
 	   </ul>
 	</dl>
+* Tools and Services
+<dl>
+	<ul>
+		<li>[GRID Test Tool](/NVIDIA/GFN-Link/wiki/GRID-Test-Tool)</li>
+		<li>[Authentication and Federation](/NVIDIA/GFN-Link/wiki/Authentication-and-Federation)</li>
+	</ul>
+</dl>
 * SDK Reference
 <dl>
 	<ul>
