@@ -1,4 +1,4 @@
-* **Introduction**
+* **[Introduction](/NVIDIA/GFN-Link/wiki)**
 	<dl>
 	   <ul>
 		  <li>[Overview](/NVIDIA/GFN-Link/wiki#ovrvw)</li>
@@ -40,7 +40,7 @@
 		<li>[Authentication and Federation](/NVIDIA/GFN-Link/wiki/Authentication-and-Federation)</li>
 	</ul>
 </dl>
-* **SDK Reference**
+* **[SDK Reference](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods)**
 <dl>
 	<ul>
 		<li>[Overview](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#overview)</li>
