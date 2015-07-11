@@ -1,4 +1,3 @@
-## GRID Test Tool
 NVIDIA provides a simple test tool in order to help with testing and debugging your application. This is located in the `Simulator` directory.
 
 In order to use this tool, you should run the tool **_prior to starting your application_**. You may then launch your application through the tool or separately.
@@ -10,7 +9,7 @@ The tool can be used to test sending the various `IGRIDApplication` commands to 
 ![GFN Simulator](https://github.com/camify/GFN-Link/blob/master/docs/GFNSimulator.png)
 ![Sample GRID App](https://github.com/camify/GFN-Link/blob/master/docs/sampleGRIDapp.png)
 
-## GRID Environment
+<dl><h4>GRID Environment</h4></dl>
 The “GRID Environment” is used to refer to the case where your application is running on a game seat virtual machine (see Architecture section). This can be emulated using the GRID Test Tool described above.
 Application developers should be sure to test their application both in and out of the GRID Environment.
 From a technical standpoint, two things must happen in order for the application to be in a GRID Environment:<br/>
