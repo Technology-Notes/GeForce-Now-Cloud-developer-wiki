@@ -1,15 +1,21 @@
-* Introduction
-* FAQ
+* **Introduction**
+	<dl>
+	   <ul>
+		  <li>[Overview](/NVIDIA/GFN-Link/wiki#ovrvw)</li>
+		  <li>[Architecture](/NVIDIA/GFN-Link/wiki#arch)</li>
+	   </ul>
+	</dl>
+* **FAQ**
 	<dl>
 	   <ul>
 		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQ)</li>
 		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQ)</li>
 	   </ul>
 	</dl>
-* Using GRID-Link SDK
+* **Using GRID-Link SDK**
 	<dl>
 	   <ul>
-		  <li>[Steps for C Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers)
+		  <li>[C Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers)
 			<ul>
 				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_proj)</li>
 				<li>[GRID Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_setup)</li>
@@ -17,7 +23,7 @@
 				<li>[Add GRID Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_api)</li>
 			</ul>
 		  </li>
-		  <li>[Steps for C++ Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers)
+		  <li>[C++ Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers)
 			<ul>
 				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_proj)</li>
 				<li>[GRID Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_setup)</li>
@@ -27,14 +33,14 @@
 		  </li>
 	   </ul>
 	</dl>
-* Tools and Services
+* **Tools and Services**
 <dl>
 	<ul>
 		<li>[GRID Test Tool](/NVIDIA/GFN-Link/wiki/GRID-Test-Tool)</li>
 		<li>[Authentication and Federation](/NVIDIA/GFN-Link/wiki/Authentication-and-Federation)</li>
 	</ul>
 </dl>
-* SDK Reference
+* **SDK Reference**
 <dl>
 	<ul>
 		<li>[Overview](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#overview)</li>
