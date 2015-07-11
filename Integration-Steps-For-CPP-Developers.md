@@ -47,7 +47,7 @@ For example, if you have a launcher that implements the patching methods and a g
 
 <dl><a name="cpp_app" /></dl>
 ## 3. Implement GRID Application Methods
-You should now begin implementing the methods stubbed out in the `GRIDApplication.cpp` file that you copied into your project
+You should now begin implementing the methods stubbed out in the `GRIDApplication.cpp` file that you copied into your project.
 
 <dl><a name="cpp_api" /></dl>
 ## 4. Add GRID Link API Calls 
