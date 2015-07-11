@@ -4,6 +4,7 @@ For an example implementation, you can refer to the `SampleCPPApplication` proje
 
 These steps will guide you with your integration.
 
+<dl><a name="cpp_proj" /></dl>
 ## 1. Project Setup
 Copy one the following files from the GRID Link SDK directory to your application’s source code tree. Use the `.c` file if you wish to use C API methods or use the `.cpp` file if you wish to use the C++ API:
 
@@ -32,6 +33,7 @@ You can easily integrate the correct library into your project by adding the app
 No further action should be required to correctly compile and link in this case.
 
 
+<dl><a name="cpp_setup" /></dl>
 ## 2. GRID Setup and Shutdown
 
 Add a call to `GRIDLinkSDK::InitializeGRIDLinkSDK()` to your application’s startup code.
@@ -43,9 +45,11 @@ You will need to include `GRIDLinkSDK_CAPI.h` for these definitions.
 An Initialize/Shutdown pair should be added each time a process that needs to communicate with GRID is started.
 For example, if you have a launcher that implements the patching methods and a game executable that implements the log-in methods, both should call Initialize at startup and Shutdown during shutdown.
 
+<dl><a name="cpp_app" /></dl>
 ## 3. Implement GRID Application Methods
 You should now begin implementing the methods stubbed out in the `GRIDApplication.cpp` file that you copied into your project
 
+<dl><a name="cpp_api" /></dl>
 ## 4. Add GRID Link API Calls 
 Lastly, you'll need to place Grid API calls in the appropriate locations in your code. See the GRID Link API Methods section for a detailed explanation of each method. 
 
