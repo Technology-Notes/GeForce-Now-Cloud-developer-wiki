@@ -1,8 +1,8 @@
 * **[Introduction](/NVIDIA/GFN-Link/wiki)**
 	<dl>
 	   <ul>
-		  <li>[Overview](/NVIDIA/GFN-Link/wiki#ovrvw)</li>
 		  <li>[Architecture](/NVIDIA/GFN-Link/wiki#arch)</li>
+		  <li>[Integration Overview](/NVIDIA/GFN-Link/wiki#ovrvw)</li>
 	   </ul>
 	</dl>
 * **FAQ**
