@@ -2,6 +2,7 @@ The C API is the most straightforward integration method, as it uses a tradition
  
 For an example implementation, you can refer to the “SampleCApplication” project included in the GRID Link SDK package.
 
+<dl><a name="c_proj" /></dl>
 ## 1. Project Setup
 Copy the following file from the "GRIDLinkSDK" directory to your application's source code tree:
 
@@ -28,7 +29,7 @@ GRIDLinkSDKNT.props should be used if you're using Multithreaded CRT linkage (/M
 
 No further action should be required to correctly compile and link in this case.
 
-
+<dl><a name="c_setup" /></dl>
 ## 2. GRID Setup and Shutdown
 
 Add a call to `glInitializeGRIDLinkSDK()` to your application’s startup code. 
@@ -40,9 +41,11 @@ You will need to include "GRIDLinkSDK_CAPI.h" for these definitions.
 An Initialize/Shutdown pair should be added each time a process that needs to communicate with GRID is started.
 For example, if you have a launcher that implements the patching methods and a game executable that implements the log-in methods, both should call Initialize at startup and Shutdown during shutdown.
 
+<dl><a name="c_app" /></dl>
 ## 3. Implement GRID Application Methods
 You should now begin implementing the methods stubbed out in the GRIDApplication.c  file that you copied into your project
 
+<dl><a name="c_api" /></dl>
 ## 4. Add GRID Link API Calls 
 Lastly, you'll need to place Grid API calls in the appropriate locations in your code. See the GRID Link API Methods section for a detailed explanation of each method. 
 
