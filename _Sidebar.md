@@ -9,20 +9,20 @@
 * Using GRID-Link SDK
 	<dl>
 	   <ul>
-		  <li>Steps for C Developers
+		  <li>[Steps for C Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers)
 			<ul>
-				<li>Project Setup</li>
-				<li>GRID Setup and Shutdown</li>
-				<li>Implement GRID Application Methods</li>
-				<li>Add GRID Link API Calls </li>
+				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_proj)</li>
+				<li>[GRID Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_setup)</li>
+				<li>[Implement GRID Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_app)</li>
+				<li>[Add GRID Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_api)</li>
 			</ul>
 		  </li>
-		  <li>Steps for C++ Developers
+		  <li>[Steps for C++ Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers)
 			<ul>
-				<li>Project Setup</li>
-				<li>GRID Setup and Shutdown</li>
-				<li>Implement GRID Application Methods</li>
-				<li>Add GRID Link API Calls </li>
+				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_proj)</li>
+				<li>[GRID Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_setup)</li>
+				<li>[Implement GRID Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_app)</li>
+				<li>[Add GRID Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_api)</li>
 			</ul>
 		  </li>
 	   </ul>
