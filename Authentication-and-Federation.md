@@ -1,3 +1,6 @@
+NVIDIA provides a backend IDM Service that application developers can use to validate users and obtain user information from. 
+A simplified flow diagram of how it functions is shown below:
+
 ![Account Federation Flow](https://github.com/camify/GFN-Link/blob/master/docs/AccountFederationFlow.PNG)
 
 ## Components
