@@ -9,7 +9,7 @@ If the dll is there, the dll will attempt to establish communication with the GR
 
 A similar situation is used when testing the application during development, where the GRID Service replaced with a test application provided in the GRID Link SDK package.
 
-![GRID Architecture](https://github.com/camify/GFN-Link/blob/master/docs/GridArch.png)
+![GRID Architecture](https://github.com/camify/GFN-Link/blob/master/docs/GameSeat.png)
 
 <dl><a name="ovrvw" /></dl>
 ### Integration Overview
