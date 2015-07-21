@@ -5,23 +5,23 @@
 		  <li>[Integration Overview](/NVIDIA/GFN-Link/wiki#ovrvw)</li>
 	   </ul>
 	</dl>
-* **Using GRID-Link SDK**
+* **Using GFN-Link SDK**
 	<dl>
 	   <ul>
 		  <li>[C Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers)
 			<ul>
 				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_proj)</li>
-				<li>[GRID Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_setup)</li>
-				<li>[Implement GRID Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_app)</li>
-				<li>[Add GRID Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_api)</li>
+				<li>[GFN Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_setup)</li>
+				<li>[Implement GFN Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_app)</li>
+				<li>[Add GFN Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-C-Developers#c_api)</li>
 			</ul>
 		  </li>
 		  <li>[C++ Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers)
 			<ul>
 				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_proj)</li>
-				<li>[GRID Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_setup)</li>
-				<li>[Implement GRID Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_app)</li>
-				<li>[Add GRID Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_api)</li>
+				<li>[GFN Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_setup)</li>
+				<li>[Implement GFN Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_app)</li>
+				<li>[Add GFN Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_api)</li>
 			</ul>
 		  </li>
 	   </ul>
@@ -29,7 +29,7 @@
 * **Tools and Services**
 <dl>
 	<ul>
-		<li>[GRID Test Tool](/NVIDIA/GFN-Link/wiki/GRID-Test-Tool)</li>
+		<li>[GFN Test Tool](/NVIDIA/GFN-Link/wiki/GRID-Test-Tool)</li>
 		<li>[Authentication and Federation](/NVIDIA/GFN-Link/wiki/Authentication-and-Federation)</li>
 	</ul>
 </dl>
@@ -39,13 +39,13 @@
 		<li>[Overview](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#overview)</li>
 		<li>[Initialization/Shutdown Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#gridinit)
 			<ul>
-				<li>[`InitializeGRID...SDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_init)</li>
-				<li>[`ShutdownGRIDLinkSDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_shut)</li>
+				<li>[`InitializeGFN...SDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_init)</li>
+				<li>[`ShutdownGFNLinkSDK`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_shut)</li>
 			</ul>
 		</li>
-		<li>[GRID Link API Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#linkapi)
+		<li>[GFN Link API Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#linkapi)
 			<ul>
-				<li>[`IsGRIDEnabled`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_enbl)</li>
+				<li>[`IsGFNEnabled`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_enbl)</li>
 				<li>[`RequestKeyboa...Open`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_kbopen)</li>
 				<li>[`RequestKeybo...Close`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_kbclose)</li>
 				<li>[`Reques...AccessToken`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_token)</li>
@@ -53,7 +53,7 @@
 				<li>[`NotifyStorageChange`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_notif)</li>
 			</ul>
 		</li>
-		<li>[GRID Application Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#gridapp)
+		<li>[GFN Application Methods](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#gridapp)
 			<ul>
 				<li>[`RequestAppli...Pause`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_pause)</li>
 				<li>[`RequestApplic...Save`](/NVIDIA/GFN-Link/wiki/GRID-Link-SDK-Methods#m_save)</li>
