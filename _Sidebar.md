@@ -26,6 +26,13 @@
 		  </li>
 	   </ul>
 	</dl>
+* **FAQ**
+	<dl>
+	   <ul>
+		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQ)</li>
+		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQ)</li>
+	   </ul>
+	</dl>
 * **Tools and Services**
 <dl>
 	<ul>
@@ -65,10 +72,3 @@
 		</li>
 	</ul>
 </dl>
-* **FAQ**
-	<dl>
-	   <ul>
-		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQ)</li>
-		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQ)</li>
-	   </ul>
-	</dl>
