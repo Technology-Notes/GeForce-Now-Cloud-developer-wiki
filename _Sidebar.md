@@ -5,6 +5,13 @@
 		  <li>[Integration Overview](/NVIDIA/GFN-Link/wiki#ovrvw)</li>
 	   </ul>
 	</dl>
+* **FAQ**
+	<dl>
+	   <ul>
+		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQ)</li>
+		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQ)</li>
+	   </ul>
+	</dl>
 * **Using GFN-Link SDK**
 	<dl>
 	   <ul>
@@ -24,13 +31,6 @@
 				<li>[Add GFN Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_api)</li>
 			</ul>
 		  </li>
-	   </ul>
-	</dl>
-* **FAQ**
-	<dl>
-	   <ul>
-		  <li>[Developers' FAQ](/NVIDIA/GFN-Link/wiki/Developer-FAQ)</li>
-		  <li>[General FAQ](/NVIDIA/GFN-Link/wiki/General-FAQ)</li>
 	   </ul>
 	</dl>
 * **Tools and Services**
