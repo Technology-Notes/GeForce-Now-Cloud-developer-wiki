@@ -14,7 +14,7 @@ A similar situation is used when testing the application during development, whe
 <dl><a name="ovrvw" /></dl>
 ### Integration Overview
 The GFN Link SDK developer package consists of the following:<br/>
-'docs\...'                      Illustrations of GFN service<br/>
+`docs\...`                      Illustrations of GFN service<br/>
 `Samples\...`			Sample application integrations<br/>
 `Simulator\...`		        Win32 tools useful for development and debugging<br/>
 `GFNLinkSDK\dll\...`		Prebuilt development dll for running in a test environment<br/>
