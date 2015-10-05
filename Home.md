@@ -47,7 +47,7 @@ At present, NVIDIA provides two different methods you can use to integrate with 
 	<tr>
 		<td><b>C#</b></td>
 		<td>
-		An object oriented API in C#.  This API is very similar to the C++ API.  C# developers must implement a class deriving from BaseGFNApplication either through the stub class provided by NVIDIA or their own custom class.
+		An object oriented API in C#.  This API is very similar to the C++ API.  It provides a light weight wrapper around the native implementation making it easy to implement a managed solution.  C# developers must implement a class deriving from BaseGFNApplication either through the stub class provided by NVIDIA or their own custom class.
 		</td>
 	</tr>
 </table>
