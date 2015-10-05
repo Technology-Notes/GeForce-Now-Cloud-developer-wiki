@@ -44,5 +44,11 @@ At present, NVIDIA provides two different methods you can use to integrate with 
 		The C++ API provides an object oriented API as well as the advantage of a unique namespace, but is otherwise similar to the C API. C++ developers can choose to implement the stub class provided by NVIDIA or interface with GFN only through the C API methods using the ‘GFNLinkSDK’ namespace.
 		</td>
 	</tr>
+	<tr>
+		<td><b>C#</b></td>
+		<td>
+		An object oriented API in C#. 
+		</td>
+	</tr>
 </table>
 </dl>
