@@ -5,9 +5,7 @@ These steps will guide you with your integration.
 
 <dl><a name="cs_proj" /></dl>
 ## 1. Project Setup
-Copy the following DLLs from the GFN Link SDK directory to your application’s output directory: `GFNLinkNativeWrapper.dll` and `GFNManagedLink.dll`.  Multiple versions of the DLLs are provided depending upon the configuration and platform.  The DLLs are located in the following location:
-
-`GFNLink\SDK\Managed\...`
+Copy the following DLLs from the GFN Link SDK directory to your application’s output directory: `GFNLinkNativeWrapper.dll` and `GFNManagedLink.dll`.  Multiple versions of the DLLs are provided depending upon the configuration and platform.  The DLLs are located in the following location:<br/> `GFNLink\SDK\Managed\...`
 
 Copy the sample `GfnApplication.cs` from the following path and add it to your application’s source code tree.
 `GFNLinkSDK\stubs\NET stubs\...`
