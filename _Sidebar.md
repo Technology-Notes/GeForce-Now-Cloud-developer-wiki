@@ -31,6 +31,14 @@
 				<li>[Add GFN Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CPP-Developers#cpp_api)</li>
 			</ul>
 		  </li>
+		  <li>[C# Developers](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CSharp-Developers)
+			<ul>
+				<li>[Project Setup](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CSharp-Developers#cs_proj)</li>
+				<li>[GFN Setup and Shutdown](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CSharp-Developers#cs_setup)</li>
+				<li>[Implement GFN Application Methods](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CSharp-Developers#cs_app)</li>
+				<li>[Add GFN Link API Calls](/NVIDIA/GFN-Link/wiki/Integration-Steps-For-CSharp-Developers#cs_api)</li>
+			</ul>
+		  </li>
 	   </ul>
 	</dl>
 * **Tools and Services**
