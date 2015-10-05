@@ -51,9 +51,9 @@ You should now begin implementing the methods stubbed out in the `GFNApplication
 
 <dl><a name="cpp_api" /></dl>
 ## 4. Add GFN Link API Calls 
-Lastly, you'll need to place Grid API calls in the appropriate locations in your code. See the GFN Link API Methods section for a detailed explanation of each method. 
+Lastly, you'll need to place GFN API calls in the appropriate locations in your code. See the GFN Link API Methods section for a detailed explanation of each method. 
 
-You will need to include `GFNLinkSDK_CAPI.h` from any file that calls into the Grid API.
+You will need to include `GFNLinkSDK_CAPI.h` from any file that calls into the GFN API.
 
 Note that in order to prevent any name collisions, all C/C++ API methods use the `GFNLinkSDK` namespace.
  
