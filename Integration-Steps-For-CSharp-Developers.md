@@ -1,7 +1,5 @@
-The C++ API provides an object oriented API as well as the advantage of a unique namespace, but is otherwise similar to the C API. C++ developers can choose to implement the stub class provided by NVidia or interface with GFN only through the C API methods using the `GFNLinkSDK` namespace.
-
-For an example implementation, you can refer to the `SampleCPPApplication` project included in the GFN Link SDK package.
-
+The C# API provides an object oriented API that is very similar to the C++ API.  C# developers must implement the sub class `GFNApplication` provided by Nvidia.
+For an example implementation, you can refer to the `SampleCSharpApplication` project included in the GFN Link SDK package.
 These steps will guide you with your integration.
 
 <dl><a name="cpp_proj" /></dl>
