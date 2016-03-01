@@ -1,5 +1,5 @@
 ## Introdution
-The GFN Link SDK (formerly known as GRID Link SDK) allows application developers to run their software to run in NVIDIA’s cloud environment known as GFN. Integration is simple to do and doesn't require a separate build process or target executable. The lightweight library adds no performance cost when operating outside of GeForce Now, so it is safe to include in builds that run on desktops or other environments.
+The GFN Link SDK (formerly known as GRID Link SDK) allows application developers to run their software  in NVIDIA’s cloud environment known as GeForce Now. Integration is simple to do and doesn't require a separate build process or target executable. The lightweight library adds no performance cost when operating outside of GeForce Now, so it is safe to include in builds that run on desktops or other environments.
 
 <dl><a name="arch" /></dl>
 ### Architecture
