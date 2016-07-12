@@ -121,7 +121,6 @@ _**Usage**_<br/>
 _**Parameters**_<br/>
 `gspPosition`	the desired screen positioning of text input element (i.e. Android keyboard). Should be one of the following values: `gspBottom, gspTop, gspLeft, gspRight, gspCenter, gspTopLeft, gspTopRight, gspBottomLeft, gspBottomRight`
 
-
 _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
@@ -167,22 +166,41 @@ C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glRequest3rdPartyToken(const char* pchPr
 C++	`GFNLinkError IGFNLink::Request3rdPartyToken(const char* pchProviderId, const char** ppchToken)`
 
 _**Description**_<br/>
-Request to access a token from 3rd party token that is stored in the GFN backend service (IDM endpoint). 
+Requests for a "token" from GFN backend service (IDM endpoint) that is originated from the 3rd Party developers own IDM. 
 
 _**Usage**_<br/>
-The access token provided can be used by the developer implementing this validating a user that matches their system.
+Provides a "token" that can be used by the developer implementing this SDK to validate a user that matches their own IDM system.
 
 _**Parameters**_<br/>
 `pchProviderId`	The Id of the 3rdparty provided by NVIDIA.
 
 _**Parameters**_<br/>
-`ppchToken`	Populated with a user specific GFN access token.
-
+`ppchToken`	Populated with a 3rd Party token.
 
 _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
+<dl><a name="m_set3token"></dl>
+### &#10146; Request3rdPartyToken
+C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glSet3rdPartyToken(const char* pchProviderId, const char** ppchToken)`<br/>
+C++	`GFNLinkError IGFNLink::Set3rdPartyToken(const char* pchProviderId, const char** ppchToken)`
+
+_**Description**_<br/>
+Puts the "token" from a 3rd party into the GFN backend service (IDM endpoint) that matches the ProviderId. 
+
+_**Usage**_<br/>
+Used when needing to update a "token" that is created by the 3rd party developer.
+
+_**Parameters**_<br/>
+`pchProviderId`	The Id of the 3rd Party provided by NVIDIA.
+
+_**Parameters**_<br/>
+`ppchToken`	The new token to update the GFN backend service.
+
+_**Return Value**_<br/>
+* `gleSuccess` On success
+* Otherwise, appropriate error code
 
 <dl><a name="m_stor"></dl>
 ### &#10146; GetStorageLocation
