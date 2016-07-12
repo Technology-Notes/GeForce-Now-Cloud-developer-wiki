@@ -184,7 +184,7 @@ _**Return Value**_<br/>
 <dl><a name="m_set3token"></dl>
 ### &#10146; Set3rdPartyToken
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glSet3rdPartyToken(const char* pchProviderId, const char** ppchToken)`<br/>
-C++	`GFNLinkError IGFNLink::Set3rdPartyToken(const char* pchProviderId, const char** ppchToken)`
+C++	`GFNLinkError IGFNLink::Set3rdPartyToken(const char* pchProviderId, const char* pchToken)`
 
 _**Description**_<br/>
 Puts the "token" from a 3rd party into the GFN backend service (IDM endpoint) that matches the ProviderId. 
@@ -196,7 +196,7 @@ _**Parameters**_<br/>
 `pchProviderId`	The Id of the 3rd Party Token Provider.
 
 _**Parameters**_<br/>
-`ppchToken`	The new token to update the GFN backend service.
+`pchToken`	The new token to update the GFN backend service.
 
 _**Return Value**_<br/>
 * `gleSuccess` On success
