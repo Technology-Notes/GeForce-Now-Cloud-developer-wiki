@@ -161,6 +161,29 @@ _**Return Value**_<br/>
 * `gleSuccess` On success
 * Otherwise, appropriate error code
 
+<dl><a name="m_3token"></dl>
+### &#10146; Request3rdPartyToken
+C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glRequest3rdPartyToken(const char* pchProviderId, const char** ppchToken)`<br/>
+C++	`GFNLinkError IGFNLink::Request3rdPartyToken(const char* pchProviderId, const char** ppchToken)`
+
+_**Description**_<br/>
+Request to access a token from 3rd party token that is stored in the GFN backend service (IDM endpoint). 
+
+_**Usage**_<br/>
+The access token provided can be used by the developer implementing this validating a user that matches their system.
+
+_**Parameters**_<br/>
+`pchProviderId`	The Id of the 3rdparty provided by NVIDIA.
+
+_**Parameters**_<br/>
+`ppchToken`	Populated with a user specific GFN access token.
+
+
+_**Return Value**_<br/>
+* `gleSuccess` On success
+* Otherwise, appropriate error code
+
+
 <dl><a name="m_stor"></dl>
 ### &#10146; GetStorageLocation
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glGetStorageLocation(const char** ppchStoragePath)`<br/>
