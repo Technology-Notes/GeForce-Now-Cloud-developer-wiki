@@ -172,7 +172,7 @@ _**Usage**_<br/>
 Provides a "token" that can be used by the developer implementing this SDK to validate a user that matches their own IDM system.
 
 _**Parameters**_<br/>
-`pchProviderId`	The Id of the 3rdparty provided by NVIDIA.
+`pchProviderId`	The Id of the 3rd Party provided by NVIDIA.
 
 _**Parameters**_<br/>
 `ppchToken`	Populated with a 3rd Party token.
