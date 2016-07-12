@@ -182,7 +182,7 @@ _**Return Value**_<br/>
 * Otherwise, appropriate error code
 
 <dl><a name="m_set3token"></dl>
-### &#10146; Request3rdPartyToken
+### &#10146; Set3rdPartyToken
 C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glSet3rdPartyToken(const char* pchProviderId, const char** ppchToken)`<br/>
 C++	`GFNLinkError IGFNLink::Set3rdPartyToken(const char* pchProviderId, const char** ppchToken)`
 
