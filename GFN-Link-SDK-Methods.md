@@ -13,6 +13,8 @@
 				<li>[`RequestKeyboardOverlayOpen`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_kbopen)</li>
 				<li>[`RequestKeyboardOverlayClose`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_kbclose)</li>
 				<li>[`RequestGFNAccessToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_token)</li>
+	                        <li>[`Request3rdPartyToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_3token)</li>
+	                        <li>[`Set3rdPartyToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_set3token)</li>
 				<li>[`GetStorageLocation`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_stor)</li>
 				<li>[`NotifyStorageChange`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_notif)</li>
 			</ul>
@@ -213,7 +215,6 @@ _**Return Value**_<br/>
 * `arNotImplemented` Method not implemented for this application
 * `arSuccess` Command accepted successfully
 * `arFailure` Command not possible at this time
-
 
 <dl><a name="m_save"></dl>
 ### &#10146; RequestApplicationSave
