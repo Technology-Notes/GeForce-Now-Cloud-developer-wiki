@@ -17,6 +17,7 @@
 	                        <li>[`Set3rdPartyToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_set3token)</li>
 				<li>[`GetStorageLocation`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_stor)</li>
 				<li>[`NotifyStorageChange`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_notif)</li>
+				<li>[`NotifyErrorEncountered`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_notiferror)</li>
 			</ul>
 		</li>
 		<li>[GFN Application Methods](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#gridapp)
@@ -230,6 +231,25 @@ Notifies GFN that file saves have completed and that it should immediately backu
 
 _**Usage**_<br/>
 Called from application when a set of file operations, as defined by the application, are completed at the GFN Storage location. GFN systems may use this notification to provide additional Cloud backup functionality. Application does not need to call this on every single file change.
+
+_**Return Value**_<br/>
+* `gleSuccess` On success
+* Otherwise, appropriate error code
+
+<dl><a name="m_notiferror"></dl>
+### &#10146; NotifyErrorEncountered
+C&nbsp;&nbsp;&nbsp;&nbsp;	`GFNLinkError glNotifyErrorEncountered(GFNLinkAppError appError, const char* pchErrorMessage)`<br/>
+C++	`GFNLinkError IGFNLink::NotifyNotifyErrorEncountered(GFNLinkAppError appError, const char* pchErrorMessage)`
+
+_**Description**_<br/>
+Notifies GFN link that an error occurred in the application. 
+
+_**Usage**_<br/>
+Called from application when an error occurs. Use existing error codes defined in GFNLinkAppError, or use any application defined error in the 0x100-0x1FF block. GFN will use this to track metrics of what errors occurred and also allows the application itself to end a GFN Link session by reporting a critical error.
+
+_**Parameters**_<br/>
+`appError`	Populated with existing error code or an application defined error in the 0x100-0x1FF block.<br/>
+`pchErrorMessage`	A human readable error message for use in logging.
 
 _**Return Value**_<br/>
 * `gleSuccess` On success
