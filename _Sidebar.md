@@ -61,11 +61,14 @@
 		<li>[GFN Link API Methods](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#linkapi)
 			<ul>
 				<li>[`IsGFNEnabled`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_enbl)</li>
-				<li>[`RequestKeyboa...Open`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_kbopen)</li>
-				<li>[`RequestKeybo...Close`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_kbclose)</li>
-				<li>[`Reques...AccessToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_token)</li>
+				<li>[`RequestKeyboardOpen`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_kbopen)</li>
+				<li>[`RequestKeyboardClose`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_kbclose)</li>
+				<li>[`RequestAccessToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_token)</li>
+				<li>[`Request3rdPartyToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_3token)</li>
+				<li>[`Set3rdPartyToken`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_set3token)</li>
 				<li>[`GetStorageLocation`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_stor)</li>
 				<li>[`NotifyStorageChange`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_notif)</li>
+				<li>[`NotifyErrorEncountered`](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#m_notiferror)</li>
 			</ul>
 		</li>
 		<li>[GFN Application Methods](/NVIDIA/GFN-Link/wiki/GFN-Link-SDK-Methods#GFNapp)
