@@ -11,8 +11,6 @@ A similar situation is used when testing the application during development, whe
 
 ![GFN Architecture](https://github.com/camify/GFN-Link/blob/master/docs/GameSeat.png)
 
-At present, NVIDIA provides two different methods you can use to integrate with GFN:
-
 <dl>
 <table>
 	<tr><th>Language</th><th>Description</th></tr>
